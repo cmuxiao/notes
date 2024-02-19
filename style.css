@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+#noteInput {
+    width: 80%; /* Keeps the input box wide */
+    padding: 20px; /* Increases padding to make the input box taller */
+    font-size: 16px; /* Keeps the font size readable */
+    margin-bottom: 10px; /* Adds some space below the input box */
+    border: 1px solid #ccc; /* Adds a subtle border to the input box */
+    border-radius: 5px; /* Optionally adds rounded corners */
+}
+
+#addNote {
+    padding: 10px 20px; /* Keeps the button comfortably sized */
+    font-size: 16px; /* Ensures the font inside the button is readable */
+    cursor: pointer; /* Changes the cursor to indicate clickable items */
+    margin-top: 5px; /* Ensures there's space between the input box and the button */
+}
+
+#notesList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#notesList li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    padding: 10px;
+    text-align: left;
+    position: relative; /* Keeps the delete button positioned correctly */
+}
+
+#notesList li button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 5px 10px; /* Adjusts padding to make sure button size is appropriate */
+    border: none; /* Removes any default border */
+    background-color: red; /* Changes the background color for visibility */
+    color: white; /* Ensures the text on the button is readable */
+    border-radius: 5px; /* Adds rounded corners to the button */
+}
